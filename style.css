@@ -1,98 +1,122 @@
 :root {
-    --main-color: #37517e;
-    --blue: #37517e;
+  --main-color: #37517e;
+  --blue: #37517e;
+}
+
+.hero-section {
+  background-color: var(--main-color) !important;
+  color: white;
+}
+
+.hero-section a {
+  color: white !important;
+}
+
+.dropdown-menu a {
+  color: black !important;
+}
+.anim-image {
+  animation: move 1s linear alternate infinite;
+}
+.brand-images img {
+  filter: grayscale(0%);
+  transition: all 0.2sec;
+}
+.brand-images img:hover {
+  filter: grayscale(100%);
+  scale: 1s;
+}
+.text-blue {
+  color: var(--blue) !important;
+}
+.gray {
+  width: 13%;
+  height: 1px;
+  background-color: rgb(165, 164, 164);
+  position: relative;
+  margin: auto;
+}
+.blue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 2px;
+  background-color: #47b2e4;
+  margin: auto;
+}
+
+.text-sm {
+  font-size: 0.8rem !important;
+}
+.bg-blue {
+  background-color: var(--main-color);
+}
+
+.my-service-card {
+  transition: all 0.4s;
+}
+
+.my-service-card:hover {
+  transform: translateY(-12px);
+  cursor: pointer;
+}
+
+.my-service-card h4 {
+  transition: all 0.4s;
+}
+.my-service-card:hover h4 {
+  color: var(--bs-info) !important;
+}
+
+.my-work-card img {
+  transition: all 0.5s;
+}
+
+.my-work-card:hover img {
+  scale: 1.1;
+}
+.number {
+  position: relative;
+  z-index: 9999;
+}
+.my-work-card:hover .card-content {
+  transform: translateY(-10px);
+}
+.my-work-card .card-content {
+  transition: all 0.5s;
+}
+.img-section {
+  background: linear-gradient(
+      to right,
+      rgba(64, 100, 143, 0.5),
+      rgba(60, 99, 146, 0.8)
+    ),
+    url(https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp)
+      fixed;
+}
+.image-underlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transform: translateY(99px);
+  transition: all 0.4s;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.image-underlay:hover .overlay {
+  transform: translateY(0);
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0);
   }
-  
-  .hero-section {
-    background-color: var(--main-color) !important;
-    color: white;
+  to {
+    transform: translateY(-20px);
   }
-  
-  .hero-section a {
-    color: white !important;
-  }
-  
-  .dropdown-menu a {
-    color: black !important;
-  }
-  .anim-image {
-    animation: move 1s linear alternate infinite;
-  }
-  .brand-images img {
-    filter: grayscale(0%);
-    transition: all 0.2sec;
-  }
-  .brand-images img:hover {
-    filter: grayscale(100%);
-    scale: 1s;
-  }
-  .text-blue {
-    color: var(--blue) !important;
-  }
-  .gray {
-    width: 13%;
-    height: 1px;
-    background-color: rgb(165, 164, 164);
-    position: relative;
-    margin: auto;
-  }
-  .blue {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 2px;
-    background-color: #47b2e4;
-    margin: auto;
-  }
-  
-  .text-sm {
-    font-size: 0.8rem !important;
-  }
-  .bg-blue {
-    background-color: var(--main-color);
-  }
-  
-  .my-service-card {
-    transition: all 0.4s;
-  }
-  
-  .my-service-card:hover {
-    transform: translateY(-12px);
-    cursor: pointer;
-  }
-  
-  .my-service-card h4 {
-    transition: all 0.4s;
-  }
-  .my-service-card:hover h4 {
-    color: var(--bs-info) !important;
-  }
-  
-  .my-work-card img {
-    transition: all 0.5s;
-  }
-  
-  .my-work-card:hover img {
-    scale: 1.1;
-  }
-  .number {
-    position: relative;
-    z-index: 9999;
-  }
-  .my-work-card:hover .card-content {
-    transform: translateY(-10px);
-  }
-  .my-work-card .card-content {
-    transition: all 0.5s;
-  }
-  
-  @keyframes move {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(-20px);
-    }
-  }
+}
