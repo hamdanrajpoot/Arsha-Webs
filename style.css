@@ -111,6 +111,14 @@
 .image-underlay:hover .overlay {
   transform: translateY(0);
 }
+.social-icon {
+  transition: all 0.2;
+}
+
+.social-icon:hover {
+  background-color: var(--bs-info) !important;
+  color: white;
+}
 
 @keyframes move {
   from {
