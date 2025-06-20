@@ -120,6 +120,10 @@
   color: white;
 }
 
+.btn:hover subsrcribe {
+  color: white;
+}
+
 @keyframes move {
   from {
     transform: translateY(0);
